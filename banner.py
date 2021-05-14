@@ -15,6 +15,6 @@ def main():
     for port in range(1,100):
         banner = retBanner(ip,port)
         if banner:
-            print "[+]" + ip + ": " + banner.strip('/n')
+            print "[+]" + ip + "/" + str(port)  + " : " + banner.strip('/n')
 
 main()            
